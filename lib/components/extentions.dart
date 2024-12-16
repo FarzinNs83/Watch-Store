@@ -8,7 +8,3 @@ extension SizedBoxExt on num {
         width: toDouble(),
       );
 }
-
-extension MediaQueryExt on BuildContext {
-  Size get size => MediaQuery.of(this).size;
-}

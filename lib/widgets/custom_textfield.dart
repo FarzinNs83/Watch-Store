@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:watch_store/components/extentions.dart';
 import 'package:watch_store/resources/app_dimensions.dart';
-import 'package:watch_store/resources/app_strings.dart';
 
 class CustomTextfield extends StatelessWidget {
   final String lable;
+  final String prefixLable;
   final String hint;
   final Widget icon;
   TextEditingController controller;
   TextAlign textAlign;
 
-  CustomTextfield(
-      {super.key,
-      required this.controller,
-      required this.lable,
-      required this.hint,
-      this.icon = const SizedBox(),
-      this.textAlign = TextAlign.center});
+  CustomTextfield({
+    super.key,
+    required this.controller,
+    required this.lable,
+    required this.hint,
+    this.prefixLable = '',
+    this.icon = const SizedBox(),
+    this.textAlign = TextAlign.center,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,16 @@ class CustomTextfield extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        Text(lable),
+        SizedBox(
+          width: size.width * .75,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(prefixLable),
+              Text(lable),
+            ],
+          ),
+        ),
         AppDimensions.small.height,
         SizedBox(
           width: size.width * .75,
@@ -34,12 +45,10 @@ class CustomTextfield extends StatelessWidget {
             keyboardType: TextInputType.numberWithOptions(),
             controller: controller,
             decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                focusedBorder:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-                hintText: hint),
+              hintText: hint,
+              prefixIcon: icon,
+              isDense: true,
+            ),
           ),
         )
       ],

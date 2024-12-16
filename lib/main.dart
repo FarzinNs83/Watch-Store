@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:watch_store/components/theme.dart';
+import 'package:watch_store/screens/get_otp_page.dart';
+import 'package:watch_store/screens/register_page.dart';
 import 'package:watch_store/screens/send_otp_page.dart';
 
 void main() {
@@ -13,7 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SendOtpPage(),
+      theme: lightTheme(),
+      home: RegisterPage(),
     );
   }
 }
