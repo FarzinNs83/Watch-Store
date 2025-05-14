@@ -11,4 +11,7 @@ class AppColors {
   static const textfilledColor = Color(0xFFFFFFFF);
   static const textButtonColor = Color(0xFFFFFFFF);
   static const editNumberColor = Color(0xFF0075FB);
+  static const navItemActive = Color(0xFF000000);
+  static const navItemInActive = Color(0xFFC4C4C4);
+  static const shadow = Color.fromARGB(90, 0, 0, 0);
 }
