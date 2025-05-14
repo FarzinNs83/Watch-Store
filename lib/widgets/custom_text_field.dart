@@ -38,8 +38,8 @@ class CustomTextField extends StatelessWidget {
             width: ScreenSize.width * 0.80,
             child: TextField(
               controller: controller,
-              textAlign: TextAlign.center,
-              decoration: InputDecoration(hintText: hint, prefixIcon: icon),
+              textAlign: textAlign,
+              decoration: InputDecoration(hintText: hint, suffixIcon: icon),
             ),
           ),
         ],

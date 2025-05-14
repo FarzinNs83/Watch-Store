@@ -32,19 +32,19 @@ class SendOtpScreen extends StatelessWidget {
                     context,
                     PageRouteBuilder(
                       pageBuilder:
-                          (context, animation, secondaryAnimation) =>
+                          (_, _, _) =>
                               GetOtpScreen(),
                       transitionsBuilder: (
                         context,
                         animation,
-                        secondaryAnimation,
+                        _,
                         child,
                       ) {
                         return SlideTransition(
                           position: animation.drive(
                             Tween(
-                              begin: Offset(1, 0),
-                              end: Offset(0, 0),
+                              begin: Offset(0, 1),
+                              end: Offset.zero,
                             ),
                           ),
                           child: child,
