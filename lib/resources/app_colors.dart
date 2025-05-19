@@ -14,4 +14,6 @@ class AppColors {
   static const navItemActive = Color(0xFF000000);
   static const navItemInActive = Color(0xFFC4C4C4);
   static const shadow = Color.fromARGB(90, 0, 0, 0);
+  static const sliderBorder = Color(0xFF707070);
+  static const sliderColor = Color(0xFFC1C1C1);
 }
