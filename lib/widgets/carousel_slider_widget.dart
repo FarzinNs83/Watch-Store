@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/resources/app_colors.dart';
 import 'package:watch_store/resources/sized_box_ext.dart';
 
-final List<String> imageList = [
+final List<String> imageIndex = [
   'https://ticktackgallery.com/media/wysiwyg/ticktackbanner/women.png',
   'https://ticktackgallery.com/media/wysiwyg/ticktackbanner/men.png',
   'https://ticktackgallery.com/media/wysiwyg/ticktackbanner/women.png',
@@ -18,13 +18,11 @@ class CarouselSliderWidget extends StatefulWidget {
 }
 
 final List<Widget> items =
-    imageList
+    imageIndex
         .map(
-          (e) => SizedBox(
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(16),
-              child: Image.network(e),
-            ),
+          (e) => ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.network(e,fit: BoxFit.fill,),
           ),
         )
         .toList();
@@ -54,11 +52,11 @@ class _CarouselSliderWidgetState extends State<CarouselSliderWidget> {
             ),
           ),
         ),
-        6.height,
+        4.height,
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children:
-              imageList
+              imageIndex
                   .asMap()
                   .entries
                   .map(

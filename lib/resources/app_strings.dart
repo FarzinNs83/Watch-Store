@@ -20,4 +20,8 @@ class AppStrings {
   static const String postCodeHint = "کد پستی  10 رقمی خود را وارد کنید";
   static const String location = "موقعیت مکانی";
   static const String locationHint = "برای انتخاب موقعیت مکانی ضربه برنید";
+  static const String classicCategory = "کلاسیک";
+  static const String smartcCategory = "هوشمند";
+  static const String digitalCategory = "دیجیتال";
+  static const String desktopCategory = "رومیزی";
 }
