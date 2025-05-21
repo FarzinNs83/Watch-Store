@@ -9,6 +9,50 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/bold.ttf
+  String get bold => 'assets/fonts/bold.ttf';
+
+  /// File path: assets/fonts/demibold.ttf
+  String get demibold => 'assets/fonts/demibold.ttf';
+
+  /// File path: assets/fonts/extrabold.ttf
+  String get extrabold => 'assets/fonts/extrabold.ttf';
+
+  /// File path: assets/fonts/extralight.ttf
+  String get extralight => 'assets/fonts/extralight.ttf';
+
+  /// File path: assets/fonts/light.ttf
+  String get light => 'assets/fonts/light.ttf';
+
+  /// File path: assets/fonts/medium.ttf
+  String get medium => 'assets/fonts/medium.ttf';
+
+  /// File path: assets/fonts/regular.ttf
+  String get regular => 'assets/fonts/regular.ttf';
+
+  /// File path: assets/fonts/thin.ttf
+  String get thin => 'assets/fonts/thin.ttf';
+
+  /// File path: assets/fonts/ultrabold.ttf
+  String get ultrabold => 'assets/fonts/ultrabold.ttf';
+
+  /// List of all assets
+  List<String> get values => [
+    bold,
+    demibold,
+    extrabold,
+    extralight,
+    light,
+    medium,
+    regular,
+    thin,
+    ultrabold,
+  ];
+}
+
 class $AssetsPngGen {
   const $AssetsPngGen();
 
@@ -43,8 +87,8 @@ class $AssetsSvgGen {
   /// File path: assets/svg/cart.svg
   String get cart => 'assets/svg/cart.svg';
 
-  /// File path: assets/svg/clasic.svg
-  String get clasic => 'assets/svg/clasic.svg';
+  /// File path: assets/svg/classic.svg
+  String get classic => 'assets/svg/classic.svg';
 
   /// File path: assets/svg/close.svg
   String get close => 'assets/svg/close.svg';
@@ -113,7 +157,7 @@ class $AssetsSvgGen {
     basket,
     cancelled,
     cart,
-    clasic,
+    classic,
     close,
     delete,
     delivered,
@@ -140,6 +184,7 @@ class $AssetsSvgGen {
 class Assets {
   const Assets._();
 
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsPngGen png = $AssetsPngGen();
   static const $AssetsSvgGen svg = $AssetsSvgGen();
 }
