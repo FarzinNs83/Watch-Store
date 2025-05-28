@@ -40,7 +40,10 @@ class CategoriesWidget extends StatelessWidget {
                 SizedBox(
                   height: ScreenSize.height * .08,
                   width: ScreenSize.height * .08,
-                  child: SvgPicture.asset(svgPath),
+                  child: SvgPicture.asset(
+                    svgPath,
+                    colorFilter: ColorFilter.mode(Colors.black, BlendMode.srcIn),
+                  ),
                 ),
               ],
             ),

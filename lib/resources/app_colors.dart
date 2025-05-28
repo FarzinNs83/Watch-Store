@@ -36,4 +36,8 @@ class LinearColors {
     Color(0xFF8396E1),
     Color(0xFFE6FCFF),
   ];
+  static const List<Color> specialOfferContainer = [
+    Color(0xFFEEEEEE),
+    Color(0xFFFFFFFF),
+  ];
 }
