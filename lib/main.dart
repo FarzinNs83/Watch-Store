@@ -7,6 +7,8 @@ import 'package:watch_store/routes/screen_route_names.dart';
 import 'package:watch_store/main_wrapper.dart';
 import 'package:watch_store/screens/register_screen.dart';
 import 'package:watch_store/screens/send_otp_screen.dart';
+import 'package:watch_store/screens/single_product.dart';
+import 'package:watch_store/screens/top_seller_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,13 +27,13 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: [const Locale('en', 'US'), const Locale('fa', 'IR')],
-      locale: const Locale('fa', 'IR'),
+      supportedLocales: [Locale('fa', 'IR')],
+      locale: Locale('fa', 'IR'),
       theme: AppTheme().themeData,
       debugShowCheckedModeBanner: false,
       routes: routes,
       // initialRoute: ScreenRouteNames.root,
-      home: MainWrapper(),
+      home: SingleProduct(),
     );
   }
 }

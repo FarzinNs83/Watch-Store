@@ -68,8 +68,11 @@ class $AssetsPngGen {
   /// File path: assets/png/watch.png
   AssetGenImage get watch => const AssetGenImage('assets/png/watch.png');
 
+  /// File path: assets/png/watch1.png
+  AssetGenImage get watch1 => const AssetGenImage('assets/png/watch1.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [logo, unnamed, user, watch];
+  List<AssetGenImage> get values => [logo, unnamed, user, watch, watch1];
 }
 
 class $AssetsSvgGen {
