@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:watch_store/resources/app_theme.dart';
-import 'package:watch_store/resources/media_size.dart';
 import 'package:watch_store/routes/routes.dart';
 import 'package:watch_store/routes/screen_route_names.dart';
 import 'package:watch_store/main_wrapper.dart';
@@ -20,7 +19,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ScreenSize().init(context);
     return MaterialApp(
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
@@ -33,7 +31,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: routes,
       // initialRoute: ScreenRouteNames.root,
-      home: SingleProduct(),
+      home: MainWrapper(),
     );
   }
 }

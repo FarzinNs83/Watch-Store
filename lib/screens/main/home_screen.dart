@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/resources/app_colors.dart';
 import 'package:watch_store/resources/app_strings.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 import 'package:watch_store/widgets/carousel_slider_widget.dart';
 import 'package:watch_store/widgets/categories_widgets.dart';
 import 'package:watch_store/widgets/search_bar.dart';

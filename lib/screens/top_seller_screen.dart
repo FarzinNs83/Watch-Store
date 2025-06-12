@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/gen/fonts.gen.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 import 'package:watch_store/widgets/main_app_bar.dart';
 import 'package:watch_store/widgets/products_grid_view.dart';
 
@@ -12,7 +12,11 @@ class TopSellerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: MainAppBar(title: 'پرفروش ترین ها', image: Assets.svg.sort),
+        appBar: MainAppBar(
+          title: 'پرفروش ترین ها',
+          image: Assets.svg.sort,
+          height: context.height * .1,
+        ),
         body: Column(
           children: [
             12.height,

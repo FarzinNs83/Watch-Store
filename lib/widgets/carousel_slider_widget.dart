@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:watch_store/resources/app_colors.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 
 final List<String> imageIndex = [
   'https://ticktackgallery.com/media/wysiwyg/ticktackbanner/women.png',

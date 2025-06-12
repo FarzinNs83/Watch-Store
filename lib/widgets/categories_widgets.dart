@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:watch_store/resources/media_size.dart';
+import 'package:watch_store/resources/ext.dart';
 
 class CategoriesWidget extends StatelessWidget {
   final String title;
@@ -24,8 +24,8 @@ class CategoriesWidget extends StatelessWidget {
           onTap: onTap,
           child: Container(
             margin: EdgeInsets.all(8),
-            height: ScreenSize.height * .09,
-            width: ScreenSize.height * .09,
+            height: context.height * .09,
+            width: context.height * .09,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: colors,
@@ -38,8 +38,8 @@ class CategoriesWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  height: ScreenSize.height * .08,
-                  width: ScreenSize.height * .08,
+                  height: context.height * .08,
+                  width: context.height * .08,
                   child: SvgPicture.asset(
                     svgPath,
                     colorFilter: ColorFilter.mode(Colors.black, BlendMode.srcIn),

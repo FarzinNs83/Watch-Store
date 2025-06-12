@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/resources/app_strings.dart';
-import 'package:watch_store/resources/media_size.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 import 'package:watch_store/screens/get_otp_screen.dart';
 import 'package:watch_store/main_wrapper.dart';
 import 'package:watch_store/widgets/custom_appbar.dart';
@@ -19,7 +18,7 @@ class RegisterScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         icon: Assets.svg.leftArrow,
-        title: AppStrings.registerButtonText,
+        title: AppStrings.registerButtonText, height: context.height * .06,
       ),
       body: SafeArea(
         child: SingleChildScrollView(

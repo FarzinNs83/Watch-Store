@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:watch_store/resources/app_colors.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 
 class NavItem extends StatelessWidget {
   final String iconPath;

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:watch_store/resources/media_size.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 
 class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
@@ -26,7 +25,7 @@ class CustomTextField extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            width: ScreenSize.width * 0.80,
+            width: context.width * 0.80,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [Text(title), Text(prefixTitle)],
@@ -34,8 +33,8 @@ class CustomTextField extends StatelessWidget {
           ),
           12.height,
           SizedBox(
-            height: ScreenSize.height * 0.07,
-            width: ScreenSize.width * 0.80,
+            height: context.height * 0.07,
+            width: context.width * 0.80,
             child: TextField(
               controller: controller,
               textAlign: textAlign,

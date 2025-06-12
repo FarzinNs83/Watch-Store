@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/resources/app_colors.dart';
-import 'package:watch_store/resources/media_size.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 import 'package:watch_store/screens/main/basket_screen.dart';
 import 'package:watch_store/screens/main/home_screen.dart';
 import 'package:watch_store/screens/main/profile_screen.dart';
@@ -58,7 +57,7 @@ class _MainWrapperState extends State<MainWrapper> {
               left: 0,
               top: 0,
               right: 0,
-              bottom: ScreenSize.height * .1,
+              bottom: context.height * .1,
               child: IndexedStack(
                 index: selectedPage,
                 children: [
@@ -125,7 +124,7 @@ class _MainWrapperState extends State<MainWrapper> {
               right: 0,
               child: Container(
                 width: double.infinity,
-                height: ScreenSize.height * .1,
+                height: context.height * .1,
                 color: Colors.white,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,

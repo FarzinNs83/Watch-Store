@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/gen/fonts.gen.dart';
 import 'package:watch_store/resources/app_colors.dart';
 import 'package:watch_store/resources/price_comma_ext.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 
 import '../gen/assets.gen.dart';
 

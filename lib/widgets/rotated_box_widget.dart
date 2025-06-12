@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/gen/fonts.gen.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 
 class RotatedBoxWidget extends StatelessWidget {
   const RotatedBoxWidget({

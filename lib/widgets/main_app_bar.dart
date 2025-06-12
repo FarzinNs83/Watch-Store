@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/gen/fonts.gen.dart';
-import 'package:watch_store/resources/media_size.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final String image;
-  const MainAppBar({super.key, required this.title, this.image = ''});
+  final double height;
+  const MainAppBar({super.key, required this.title, this.image = '', required this.height});
 
   @override
   Widget build(BuildContext context) {
     return PreferredSize(
-      preferredSize: Size.fromHeight(ScreenSize.height * .1),
+      preferredSize: Size.fromHeight(context.height * .1),
       child: Container(
         padding: EdgeInsets.all(8),
         decoration: BoxDecoration(
@@ -77,5 +77,5 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(ScreenSize.height * .1);
+  Size get preferredSize => Size.fromHeight(height);
 }

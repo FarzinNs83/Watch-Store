@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/resources/app_colors.dart';
-import 'package:watch_store/resources/media_size.dart';
+import 'package:watch_store/resources/ext.dart';
 
 class CustomSearchBar extends StatelessWidget {
   const CustomSearchBar({
@@ -14,7 +14,7 @@ class CustomSearchBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        height: ScreenSize.height * .07,
+        height: context.height * .07,
         width: double.infinity,
     
         decoration: BoxDecoration(

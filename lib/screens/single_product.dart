@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/gen/fonts.gen.dart';
 import 'package:watch_store/resources/price_comma_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 import 'package:watch_store/widgets/main_app_bar.dart';
 
 class SingleProduct extends StatelessWidget {
@@ -27,10 +28,8 @@ class SingleProduct extends StatelessWidget {
                   ),
                 ),
                 Row(
-                  
                   children: [
                     Container(
-                      padding: EdgeInsets.all(4),
                       height: 26,
                       width: 40,
                       decoration: BoxDecoration(
@@ -66,7 +65,7 @@ class SingleProduct extends StatelessWidget {
             ),
           ),
         ),
-        appBar: MainAppBar(title: 'ساعت شیائومی mi Watch lite'),
+        appBar: MainAppBar(title: 'ساعت شیائومی mi Watch lite', height: context.height * .1,),
         body: SingleChildScrollView(
           child: SizedBox(
             width: double.infinity,
@@ -74,6 +73,7 @@ class SingleProduct extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(Assets.png.watch1.path),
+                16.height,
                 Container(
                   margin: EdgeInsets.all(6),
                   decoration: BoxDecoration(
@@ -95,18 +95,60 @@ class SingleProduct extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("بنسر"),
-                        Text("مسواک بنسر مدل اکسترا با برس متوسط 3 عددی"),
+                        Text(
+                          "بنسر",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontFamily: FontFamily.dana,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        8.height,
+                        Text(
+                          "مسواک بنسر مدل اکسترا با برس متوسط 3 عددی",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontFamily: FontFamily.dana,
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                        12.height,
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            Text('خصوصیات'),
-                            Text("نقد و بررسی"),
-                            Text("نظرات"),
+                            Text(
+                              'خصوصیات',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontFamily: FontFamily.dana,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            Text(
+                              "نقد و بررسی",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontFamily: FontFamily.dana,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            Text(
+                              "نظرات",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontFamily: FontFamily.dana,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
                           ],
                         ),
+                        24.height,
                         Text(
                           '''لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.''',
+                          style: TextStyle(
+                            fontFamily: FontFamily.dana,
+                            fontSize: 14,
+                          ),
                         ),
                       ],
                     ),

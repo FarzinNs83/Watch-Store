@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:watch_store/gen/assets.gen.dart';
 import 'package:watch_store/resources/app_animations.dart';
 import 'package:watch_store/resources/app_strings.dart';
-import 'package:watch_store/resources/sized_box_ext.dart';
+import 'package:watch_store/resources/ext.dart';
 import 'package:watch_store/screens/get_otp_screen.dart';
 import 'package:watch_store/widgets/custom_button.dart';
 import 'package:watch_store/widgets/custom_text_field.dart';
